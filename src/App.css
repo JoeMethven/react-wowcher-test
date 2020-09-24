@@ -1,0 +1,196 @@
+@import 'https://necolas.github.io/normalize.css/8.0.1/normalize.css';
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+main {
+	height: 100%;
+}
+
+@font-face {
+	font-family: 'open-sans';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Open Sans Regular'), local('OpenSans-Regular'),
+		url('./fonts/OpenSans-Regular.woff2') format('woff2');
+}
+
+body {
+	background-color: #e6e6e6;
+	font-family: 'open sans', 'Arial', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-weight: 400;
+	color: #000;
+	font-size: 100%;
+}
+
+.container {
+	padding: 4rem 2rem;
+	max-width: 1170px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.logo {
+	margin-bottom: 2rem;
+}
+
+.product-list {
+	display: grid;
+}
+
+.product-list table {
+	border-collapse: collapse;
+	overflow: hidden;
+	border-radius: 4px;
+	width: 100%;
+}
+
+.product-list .product-list-table {
+	border: 1px solid #d6d6d6;
+	border-bottom: 2px solid #d6d6d6;
+	border-radius: 4px;
+}
+
+.product-list thead,
+.product-list tfoot {
+	/*color: #ffffff;*/
+}
+
+.product-list tbody,
+.product-list table p {
+	/*color: #ffffff;*/
+}
+
+.product-list th,
+.product-list td {
+	background: #ffffff;
+}
+
+.product-list th,
+.product-list tfoot td {
+	text-align: initial;
+	font-size: 0.9rem;
+	color: #666666;
+	padding: 1.5rem;
+}
+
+.product-list th:last-child {
+	text-align: right;
+}
+
+/*.product-list th {*/
+/*	background-color: #eb008c;*/
+/*}*/
+
+.product-list th:first-child {
+	width: 300px;
+}
+
+.product-list th:last-child {
+	width: 100px;
+}
+
+.product-list td {
+	padding: 1.5rem;
+}
+
+/*.product-list tr:nth-child(2n) {*/
+/*	background-color: #21242c;*/
+/*}*/
+
+/*.product-list tr:nth-child(2n + 1) {*/
+/*	background-color: #2a2f3d;*/
+/*}*/
+
+/*.product-list thead tr:first-child th:first-child {*/
+/*	border-top-left-radius: 4px;*/
+/*}*/
+
+/*.product-list thead tr:first-child th:last-child {*/
+/*	border-top-right-radius: 4px;*/
+/*}*/
+
+.product-list tbody tr {
+	border-top: 1px solid #e6e6e6;
+}
+
+.product-list td:last-child {
+	text-align: right;
+}
+
+.product-list tfoot td {
+	border-top: 1px solid #e6e6e6;
+	font-weight: 700;
+}
+
+.product-list .product-list-search {
+	margin-bottom: 1rem;
+}
+
+.product-list .product-list-search label {
+	color: #666;
+	margin-bottom: 0.5rem;
+	display: block;
+}
+
+.product-list .product-list-search .product-list-search-input {
+	max-width: 600px;
+	position: relative;
+}
+
+.product-list .product-list-search .product-list-search-input img {
+	position: absolute;
+	right: 0.95rem;
+	height: 20px;
+	top: 11px;
+}
+
+.product-list .product-list-search input {
+	box-sizing: border-box;
+	margin-bottom: 5px;
+	padding: 0.5rem 0.75rem;
+	color: #000;
+	font-weight: 700;
+	border-radius: 4px;
+	line-height: 24px;
+	outline: none;
+	width: 100%;
+	border: 1px solid #eb008c;
+	background-color: #ffebf7;
+	transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+}
+
+.product-list .product-list-search input:hover {
+	background-color: #fff0fc;
+}
+
+::placeholder {
+	font-weight: 400;
+}
+
+@media screen and (max-width: 792px) {
+	.container {
+		padding: 2rem;
+	}
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+main > .container {
+	flex-grow: 1;
+}
+
+main footer {
+	margin-top: auto;
+}
